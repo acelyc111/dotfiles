@@ -1,0 +1,1 @@
+alias aack="~/lg.sh"
