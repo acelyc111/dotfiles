@@ -73,9 +73,9 @@ then
 
   alias ls='ls -G'
   # some more ls aliases
-  alias ll='ls -alF'
-  alias la='ls -A'
-  alias l='ls -CF'
+  alias ll='ls -lF'
+  alias la='ll -a'
+  #alias l='ls -CF'
 elif [ $os == "Linux" ];
 then
   # enable color support of ls and also add handy aliases
@@ -87,9 +87,9 @@ then
   fi
 
   # some more ls aliases
-  alias ll='ls -alF'
-  alias la='ls -A'
-  alias l='ls -CF'
+  alias ll='ls -lF'
+  alias la='ll -a'
+  #alias l='ls -CF'
 fi
 
 alias grep='grep --color=auto'
