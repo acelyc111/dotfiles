@@ -8,6 +8,7 @@ fi
 # User specific environment and startup programs
 
 PATH=$PATH:$HOME/bin
-SVN_EDITOR=vim
-
+PATH=$PATH:$HOME/dev/tools/luacheck/bin
 export PATH
+
+export SVN_EDITOR=vim
