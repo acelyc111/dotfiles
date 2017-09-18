@@ -21,9 +21,9 @@ set fileformats=unix,dos,mac
 " Indenting
 set expandtab
 set smarttab
-set tabstop=2
-set softtabstop=2
-set shiftwidth=2
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
 set autoindent
 set smartindent
 let g:indent_guides_guide_size=1
@@ -57,7 +57,7 @@ set report=0
 
 " Command line
 set showcmd
-set history=5000
+set history=500
 set wildmenu
 set wildmode=list,longest,full
 set wildignore=*~,*.o,*.so,*.so.*,*.a,*.d,*.pyc,*.pyo,*.class
@@ -91,9 +91,9 @@ set gdefault
 set wrapscan
 
 " Folding
-"set foldenable
-"set foldmethod=syntax
-"set foldlevel=100
+set foldenable
+set foldmethod=indent
+set foldlevel=100
 
 " Backing up
 set backup
@@ -193,11 +193,12 @@ filetype off                  " 必须
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'desert.vim'
 Plugin 'minibufexpl.vim'
 Plugin 'a.vim'
-Plugin 'json.vim'
 Plugin 'https://github.com/majutsushi/tagbar'
 Plugin 'https://github.com/scrooloose/nerdtree'
+Plugin 'https://github.com/python-mode/python-mode.git'
 call vundle#end()
 filetype plugin indent on
 
@@ -253,15 +254,5 @@ augroup filetype
     au! BufRead,BufNewFile *.thrift set filetype=thrift
     au! BufRead,BufNewFile *.proto set filetype=proto
     au! BufRead,BufNewFile *.ipp set filetype=cpp
+    au! BufRead,BufNewFile *.py set filetype=python
 augroup end
-
-" Json
-augroup json_autocmd 
-  autocmd! 
-  autocmd FileType json set autoindent 
-  autocmd FileType json set formatoptions=tcq2l 
-  autocmd FileType json set textwidth=78 shiftwidth=2 
-  autocmd FileType json set softtabstop=2 tabstop=8 
-  autocmd FileType json set expandtab 
-  autocmd FileType json set foldmethod=syntax 
-augroup END
