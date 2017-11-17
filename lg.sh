@@ -16,4 +16,4 @@ else
 fi
 
 echo -e 'start to find \033[40;32m'$1'\033[0m in \033[40;32m'$path'\033[0m'
-find $path | xargs egrep "${1}" -n | egrep -v "${exclude}" | egrep "${1}" --color=auto
+find $path -type f -print0 | xargs -0 egrep "${1}" -n | egrep -v "${exclude}" | egrep "${1}" --color=auto
