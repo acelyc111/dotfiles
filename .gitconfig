@@ -2,3 +2,13 @@
     ui = true
 [merge]
     tool = vimdiff
+[user]
+	email = 405403881@qq.com
+	name = acelyc111
+	fullname = Yingchun Lai
+[http]
+	postBuffer = 524288000
+	proxy = socks5://localhost:1080
+[https]
+	postBuffer = 524288000
+	proxy = socks5://localhost:1080
