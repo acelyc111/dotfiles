@@ -200,7 +200,6 @@ Plugin 'nginx.vim'
 Plugin 'taglist.vim'
 Plugin 'https://github.com/majutsushi/tagbar'
 Plugin 'https://github.com/scrooloose/nerdtree'
-Plugin 'https://github.com/python-mode/python-mode.git'
 call vundle#end()
 filetype plugin indent on
 
