@@ -3,7 +3,7 @@
 [merge]
     tool = vimdiff
 [user]
-	email = 405403881@qq.com
+    email = acelyc1112009@gmail.com
 	name = Yingchun Lai
 [pull]
     rebase = true
