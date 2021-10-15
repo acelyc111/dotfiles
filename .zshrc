@@ -112,3 +112,5 @@ export PATH="/usr/local/opt/ruby/bin:$PATH"
 export DORIS_GCC_HOME="/usr/local/Cellar/gcc@7/11.1_2"
 export OPENSSL_ROOT_DIR="/usr/local/opt/openssl"
 export PATH="/usr/local/opt/gnu-getopt/bin:$PATH"
+
+export LESSCHARSET=utf-8
